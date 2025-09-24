@@ -1,7 +1,7 @@
 services:
   db:
     image: postgres
-    container_name: app_postgres
+    container_name: app_db
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-mydb}
       POSTGRES_USER: ${POSTGRES_USER:-myuser}

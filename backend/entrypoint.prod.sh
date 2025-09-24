@@ -7,11 +7,14 @@ echo "Running Django setup tasks."
 # Apply migrations
 python manage.py migrate --noinput
 
+# Collect static files
+python manage.py collectstatic --noinput
+
 # Add demo users
 python manage.py load_demo_users || true
 
 # Add demo articles
-python manage.py load_demo_articles || true
+python manage.py load_demo_articles --username demo_user1 || true
 
 # Create superuser
 python manage.py createsuperuser --noinput || true
