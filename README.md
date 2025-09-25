@@ -27,6 +27,10 @@ A Django REST API for managing Articles with Authors, Tags, and Comments. It sup
 - Uvicorn (ASGI)
 - Docker + docker compose
 
+### Requirements
+
+Requirements of the project are listed in `requirements.txt` and `pyproject.toml` file.
+
 ## Quickstart (Docker)
 
 ### Build and start the stack
